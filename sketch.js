@@ -3,10 +3,10 @@ let omega = 0.25
 let buttonIncrease
 let buttonDecrease
 let show = false
-let img
+//let img
 
 function preload() {
-    img = loadImage("../Earth_smaller.png");
+    //img = loadImage("../Earth_smaller.png");
 }
 
 
@@ -42,7 +42,7 @@ function draw() {
       sphere(200);
   }
   fill(173, 25, 96);
-  texture(img)
+  //texture(img)
   stroke(0)
   ellipsoid(200, 200 *(1-omega*omega), 200);
 }
