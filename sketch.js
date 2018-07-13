@@ -48,12 +48,14 @@ function draw() {
 }
 
 function mousePressed() {
-    if (playing) {
-        noLoop()
-        playing = false
-    } else {
-        loop()
-        playing = true
+    if (mouseX < 800 && mouseY < 640) {
+        if (playing) {
+            noLoop()
+            playing = false
+        } else {
+            loop()
+            playing = true
+        }
     }
 }
 
